@@ -13,7 +13,7 @@ public class UtilityImpl implements Utility {
     @Override
     public void checkEmailVerification(String emailToCheck) throws IOException {
         FileInputStream fileInputStream =
-                new FileInputStream("src/ua/univer/EmailVerification/config/regex.properties");
+                new FileInputStream("java/ua/univer/EmailVerification/config/regex.properties");
         Properties property = new Properties();
         property.load(fileInputStream);
 

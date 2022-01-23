@@ -7,6 +7,6 @@ import java.io.IOException;
 public class AppRunner {
     public static void main(String[] args) throws IOException {
         UtilityImpl utility = new UtilityImpl();
-        utility.checkEmailVerification("max05012004gma.ilco");
+        utility.checkEmailVerification("max05012004@gmail.com");
     }
 }
