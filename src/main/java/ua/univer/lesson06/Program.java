@@ -69,7 +69,7 @@ public class Program {
                 }
             }
         }
-        return list.stream().mapToDouble(x -> (double) x).toArray();
+        return list.stream().mapToDouble(double.class::cast).toArray();
     }
 
     private static void writeData(OutputStream out, double[] values)
@@ -100,10 +100,9 @@ public class Program {
         StringBuilder sb = new StringBuilder();
         BufferedReader br = new BufferedReader(new FileReader(filename));
         while(br.ready()){
-            sb.append(br.readLine()+" ");
+            sb.append(br.readLine()).append(" ");
         }
-        Map<String, Integer> freqWord = getFreqWordFrom(sb.toString());
-        return freqWord;
+        return getFreqWordFrom(sb.toString());
     }
 
     private static Map<String, Integer> getFreqWordFrom(String str) {

@@ -1,0 +1,17 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(»û‘şÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(³ÕÓ
+K
+java:S2446"0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(»û‘şÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(‰Û¢¶
+K
+java:S2446""0"notify" may not wake up the appropriate thread.(óÄ£¶øÿÿÿÿ
+E
+java:S1197G"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(Ç®¾úÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»˜¿Œ
+=
+java:S2189@""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+=
+java:S21891""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ

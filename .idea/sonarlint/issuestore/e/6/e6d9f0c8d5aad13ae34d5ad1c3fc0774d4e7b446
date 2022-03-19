@@ -1,0 +1,29 @@
+
+M
+java:S1854"7Remove this useless assignment to local variable "arr".(Æ°ø¤
+>
+java:S1481"(Remove this unused "arr" local variable.(Æ°ø¤
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(êÏ˜Õûÿÿÿÿ
+Q	java:S125	"<This block of commented-out lines of code should be removed.(¶ÍÙ¥
+V	java:S125"<This block of commented-out lines of code should be removed.(˜¾Ãşÿÿÿÿ
+V	java:S125$"<This block of commented-out lines of code should be removed.(˜¾Ãşÿÿÿÿ
+G
+java:S1144"2Remove this unused private "writeArrToDir" method.(¶ÓÙC
+H
+java:S1144"2Remove this unused private "writeArrToTXT" method.(½°’
+G
+java:S1144 "2Remove this unused private "writeArrToCSV" method.(§ëq
+M
+java:S1144)"2Remove this unused private "getArrFromTXT" method.(²äÊõùÿÿÿÿ
+e
+java:S1192
+"JDefine a constant instead of duplicating this literal "resources" 5 times.(êÏ˜Õûÿÿÿÿ
+c
+java:S2095!"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ïÁãìùÿÿÿÿ
+g
+java:S20957"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.( ±…ôûÿÿÿÿ
+^
+java:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(òçŸ¥
+g
+java:S2095*"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.( ±…ôûÿÿÿÿ

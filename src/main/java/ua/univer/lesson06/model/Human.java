@@ -17,9 +17,7 @@ public record Human(String name, List<String> pets) implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Human)) return false;
-
-        Human human = (Human) o;
+        if (!(o instanceof Human human)) return false;
 
         if (getName() != null ? !getName().equals(human.getName()) : human.getName() != null) return false;
         return getPets() != null ? getPets().equals(human.getPets()) : human.getPets() == null;

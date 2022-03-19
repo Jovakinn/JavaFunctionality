@@ -1,0 +1,17 @@
+
+Z
+java:S1854	"?Remove this useless assignment to local variable "typeEngine2".(÷éˆ»şÿÿÿÿ
+Z
+java:S1854"?Remove this useless assignment to local variable "typeEngine1".(ŒğÑ÷şÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "shield1".(ùíÅÂ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(³ÎÄò
+B
+java:S1481",Remove this unused "shield1" local variable.(ùíÅÂ
+K
+java:S1481"0Remove this unused "typeEngine1" local variable.(ŒğÑ÷şÿÿÿÿ
+K
+java:S1481	"0Remove this unused "typeEngine2" local variable.(÷éˆ»şÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¯ô¢ô
+]
+java:S1192"GDefine a constant instead of duplicating this literal "Pistol" 4 times.(¾†´Á

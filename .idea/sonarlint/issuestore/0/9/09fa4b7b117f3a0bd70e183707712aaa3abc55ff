@@ -1,0 +1,31 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¶Çî÷
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ˆøâ„øÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¶Ç¤‡
+N	java:S106"9Replace this use of System.out or System.err by a logger.(“ÓšË
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(«€¯ûüÿÿÿÿ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(ÜöÍï
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(Æ‚›Õüÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(–ßûÁúÿÿÿÿ
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(Ø›ı½øÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(–ßûÁúÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(Õõ§Åøÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(Ø›ı½øÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(ŸŒäèûÿÿÿÿ
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(¹ƒØ¤ûÿÿÿÿ
+S	java:S106I"9Replace this use of System.out or System.err by a logger.(˜±³Ÿøÿÿÿÿ
+V	java:S125N"<This block of commented-out lines of code should be removed.(‡àÃİøÿÿÿÿ
+M
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ
+K
+java:S1128"0Remove this unused import 'java.util.Hashtable'.(Œ»ÏÊüÿÿÿÿ
+E
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ
+]
+java:S1192"GDefine a constant instead of duplicating this literal " start" 7 times.(¶Çî÷
+l
+java:S11922"QDefine a constant instead of duplicating this literal "AnnonimRunnable " 4 times.(–ßûÁúÿÿÿÿ
+>
+java:S1604/"(Make this anonymous inner class a lambda(ÉãÃ®

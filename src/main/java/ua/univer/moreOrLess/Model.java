@@ -9,7 +9,7 @@ public class Model {
 
     private int secretValue;
 
-    private List<Integer> yourWay = new ArrayList<>();
+    private final List<Integer> yourWay = new ArrayList<>();
 
     public void setSecretValue() {
         secretValue = (int) Math.ceil(Math.random() * (maxBarrier - minBarrier - 1) + minBarrier);

@@ -1,0 +1,16 @@
+
+P
+java:S1118":Add a private constructor to hide the implicit public one.(€÷Ôá
+b
+java:S2677!"LUse or store the value returned from "readLine" instead of throwing it away.(™¸¡
+Q	java:S125 "<This block of commented-out lines of code should be removed.(å×€
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(£Èîşÿÿÿÿ
+b
+java:S26772"LUse or store the value returned from "readLine" instead of throwing it away.(™¸¡
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(£Èîşÿÿÿÿ
+f
+java:S2095"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(Ç‘ëè
+e
+java:S2095"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(¢åö
+g
+java:S20951"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ó²ï¾ıÿÿÿÿ

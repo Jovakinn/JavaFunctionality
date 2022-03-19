@@ -13,7 +13,7 @@ public class GuiForm {
     static JButton btn3;
     public static void main(String[] args) {
         JFrame win = new JFrame("win");
-        win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        win.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         win.setSize(300,400);
 
         JPanel panel = new JPanel();
@@ -67,22 +67,22 @@ public class GuiForm {
 
         @Override
         public void mousePressed(MouseEvent e) {
-
+            // TODO document why this method is empty
         }
 
         @Override
         public void mouseReleased(MouseEvent e) {
-
+            // TODO document why this method is empty
         }
 
         @Override
         public void mouseEntered(MouseEvent e) {
-
+            // TODO document why this method is empty
         }
 
         @Override
         public void mouseExited(MouseEvent e) {
-
+            // TODO document why this method is empty
         }
     }
     static class MyMouseListener3 implements MouseListener{
@@ -95,22 +95,22 @@ public class GuiForm {
 
         @Override
         public void mousePressed(MouseEvent e) {
-
+            // TODO document why this method is empty
         }
 
         @Override
         public void mouseReleased(MouseEvent e) {
-
+            // TODO document why this method is empty
         }
 
         @Override
         public void mouseEntered(MouseEvent e) {
-
+            // TODO document why this method is empty
         }
 
         @Override
         public void mouseExited(MouseEvent e) {
-
+            // TODO document why this method is empty
         }
     }
 }
