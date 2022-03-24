@@ -1,8 +1,11 @@
 package ua.DemoApp;
 
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
-@FunctionalInterface
-public interface Randomizer {
-    <T> T randomize(List<T> list);
+public class Randomizer {
+    public <T> T randomize(List<T> list){
+        var index = ThreadLocalRandom.current().nextInt(list.size());
+        return list.get(index);
+    }
 }

@@ -1,33 +1,29 @@
 package ua.DemoApp;
 
-import lombok.SneakyThrows;
 import lombok.extern.java.Log;
+import net.sf.cglib.proxy.Enhancer;
+import net.sf.cglib.proxy.MethodInterceptor;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Proxy;
 import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
 
 @Log
 public class DemoApp {
 
-    @SneakyThrows
     public static void main(String[] args) {
-        var randomizerInterface = Class.forName("ua.DemoApp.Randomizer");
-        var classLoader = randomizerInterface.getClassLoader();
-        var interfacesToImplement = new Class<?>[]{randomizerInterface};
-        InvocationHandler handler = (proxy, method, args1) -> {
+        var enhancer = new Enhancer();
+        enhancer.setSuperclass(Randomizer.class);
+        enhancer.setCallback((MethodInterceptor)(obj, method, methodArgs, proxy) -> {
             if (method.getName().equals("randomize")) {
-                var list = (List<?>) args1[0];
-                var index = ThreadLocalRandom.current().nextInt(list.size());
-                return list.get(index);
+                log.info("Calling method from CGLib Proxy");
+                return proxy.invokeSuper(obj, methodArgs);
             }
             throw new UnsupportedOperationException();
-        };
+        });
+        var proxyInstance = (Randomizer) enhancer.create();
+        testRandomizer(proxyInstance, List.of(1, 2, 3, 4, 5));
+    }
 
-        var randomizerInstance = Proxy.newProxyInstance(classLoader, interfacesToImplement, handler);
-        var randomizeMethod = randomizerInstance.getClass().getMethod("randomize", List.class);
-        var result = randomizeMethod.invoke(randomizerInstance, List.of(1, 23, 45, 67, 900));
-        log.info(String.valueOf(result));
+    public static void testRandomizer(Randomizer randomizer, List<?> list){
+        log.info(String.valueOf(randomizer.randomize(list)));
     }
 }
