@@ -1,4 +1,4 @@
-package ua.DemoApp;
+package ua.univer.DemoApp;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;

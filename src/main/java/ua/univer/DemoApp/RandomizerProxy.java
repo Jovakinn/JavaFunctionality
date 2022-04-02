@@ -1,4 +1,4 @@
-package ua.DemoApp;
+package ua.univer.DemoApp;
 
 import lombok.extern.java.Log;
 
