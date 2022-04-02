@@ -1,29 +1,32 @@
 package ua.DemoApp;
 
 import lombok.extern.java.Log;
-import net.sf.cglib.proxy.Enhancer;
-import net.sf.cglib.proxy.MethodInterceptor;
-
+import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+
+import static java.util.stream.Collectors.toList;
 
 @Log
 public class DemoApp {
 
     public static void main(String[] args) {
-        var enhancer = new Enhancer();
-        enhancer.setSuperclass(Randomizer.class);
-        enhancer.setCallback((MethodInterceptor)(obj, method, methodArgs, proxy) -> {
-            if (method.getName().equals("randomize")) {
-                log.info("Calling method from CGLib Proxy");
-                return proxy.invokeSuper(obj, methodArgs);
-            }
-            throw new UnsupportedOperationException();
-        });
-        var proxyInstance = (Randomizer) enhancer.create();
-        testRandomizer(proxyInstance, List.of(1, 2, 3, 4, 5));
-    }
+        List<Optional<String>> strings = Arrays.asList(Optional.ofNullable("Java"),
+                Optional.ofNullable("Cringe"));
+        strings.stream()
+                .filter(Optional::isPresent)
+                .map(Optional::get)
+                .map(s -> s.split(""))
+                .map(Arrays::stream)
+                .distinct()
+                .collect(toList());
+        for (Optional<String> s : strings)
+            log.info(String.valueOf(Optional.ofNullable(s)));
 
-    public static void testRandomizer(Randomizer randomizer, List<?> list){
-        log.info(String.valueOf(randomizer.randomize(list)));
+        List<String> filteredList = strings.stream()
+                .flatMap(Optional::stream)
+                .collect(toList());
+        for (String s : filteredList)
+            log.info(s);
     }
 }
