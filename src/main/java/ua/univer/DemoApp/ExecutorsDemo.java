@@ -1,33 +1,25 @@
 package ua.univer.DemoApp;
 
+import lombok.SneakyThrows;
 import lombok.extern.java.Log;
-
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
 @Log
 public class ExecutorsDemo {
-    private static final int THREADS_AMOUNT = 10;
 
     public static void main(String[] args) {
-        ExecutorService executor = Executors.newFixedThreadPool(THREADS_AMOUNT);
-        Runnable runnableTask = () -> {
-            try {
-                TimeUnit.SECONDS.sleep(1);
-                log.info("Hello from runnable task");
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        };
+        var voidCompletableFuture = CompletableFuture
+                .supplyAsync(ExecutorsDemo::getValueFromAnotherService)
+                .thenApply(Integer::parseInt)
+                .thenAccept(a -> log.info(String.valueOf(a)));
+        log.info("I am not blocked");
+        voidCompletableFuture.join();
+    }
 
-        Callable<String> callableTask = () -> {
-            TimeUnit.SECONDS.sleep(3);
-            return "Task execution";
-        };
-
-        executor.execute(runnableTask);
-        executor.shutdown();
+    @SneakyThrows
+    private static String getValueFromAnotherService() {
+        TimeUnit.SECONDS.sleep(1);
+        return "17";
     }
 }

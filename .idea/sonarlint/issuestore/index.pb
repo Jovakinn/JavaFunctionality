@@ -97,3 +97,17 @@ X
 (src/main/java/ua/bobocode/UtilClass.java,3/8/383ab24d243a331973a8d097eadd3a5b35252d2e
 X
 (src/main/java/ua/bobocode/Container.java,e/c/ec4c73244b587f8e4cbf0ce91069b0471fed4d13
+Y
+)src/main/java/ua/bobocode/BaseEntity.java,7/c/7c5b9fde27cd4231682f328c41e3d002ce1784dd
+S
+#src/main/java/ua/bobocode/User.java,0/f/0f764365a55c4207248d27a325a92a42eef466ef
+Y
+)src/main/java/ua/bobocode/MagicClass.java,2/2/2219009c6e931b490c7c265fe2f9daa6b6ef2b3f
+U
+%src/main/java/ua/bobocode/Marker.java,a/d/ad687011ec444bb4defb52a3f8b3a183bc03ca82
+T
+$src/main/java/ua/bobocode/Sorts.java,1/6/166a09a8e00a9524f1f466e60f2b6e203b3d388f
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+c
+3src/main/java/ua/univer/lesson05/ProgramStream.java,c/9/c9df78fbee5778655032c776e4c1145b2f460d5a
