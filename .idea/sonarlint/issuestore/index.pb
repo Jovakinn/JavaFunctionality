@@ -107,7 +107,5 @@ U
 %src/main/java/ua/bobocode/Marker.java,a/d/ad687011ec444bb4defb52a3f8b3a183bc03ca82
 T
 $src/main/java/ua/bobocode/Sorts.java,1/6/166a09a8e00a9524f1f466e60f2b6e203b3d388f
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 c
 3src/main/java/ua/univer/lesson05/ProgramStream.java,c/9/c9df78fbee5778655032c776e4c1145b2f460d5a
