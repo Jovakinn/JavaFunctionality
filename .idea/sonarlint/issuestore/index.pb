@@ -109,3 +109,9 @@ T
 $src/main/java/ua/bobocode/Sorts.java,1/6/166a09a8e00a9524f1f466e60f2b6e203b3d388f
 c
 3src/main/java/ua/univer/lesson05/ProgramStream.java,c/9/c9df78fbee5778655032c776e4c1145b2f460d5a
+^
+.src/main/java/ua/univer/DemoApp/MergeSort.java,e/0/e00c5e62f87586cab7c1a533d10cdf0f72578c7a
+\
+,src/main/java/ua/univer/DemoApp/Threads.java,6/f/6fd1a19675899d1ca62fc1f3fceb0a32aeef61aa
+b
+2src/main/java/ua/univer/DemoApp/MergeSortTask.java,9/9/99e2bfac860b515450bde9cc4a5a49797c4ba6ba
